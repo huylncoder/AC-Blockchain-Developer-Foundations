@@ -4,7 +4,7 @@ import { MyMintableToken } from "../typechain";
 async function main() {
   const [deployer, addr1] = await ethers.getSigners();
 
-  const token: MyMintableToken = await ethers.getContract("MyToken");
+  const token: MyMintableToken = await ethers.getContract("MyMintableToken");
 
   console.log(`Token address: ${await token.getAddress()}`);
 
